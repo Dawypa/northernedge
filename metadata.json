@@ -1,0 +1,6 @@
+{
+  "name": "Northern Edge Footy — Adelaide Football Skills & Athletic Development",
+  "description": "High-performance Australian Rules Football skills coaching, 1-on-1 mentoring, 3RM strength & conditioning, and injury resilience clinic in North-East Adelaide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

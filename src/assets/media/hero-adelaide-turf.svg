@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" fill="none">
+  <defs>
+    <linearGradient id="bgSky" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B0E14" />
+      <stop offset="48%" stop-color="#111A2E" />
+      <stop offset="100%" stop-color="#0A131E" />
+    </linearGradient>
+    <radialGradient id="stadiumGlowOrange" cx="82%" cy="22%" r="48%">
+      <stop offset="0%" stop-color="#FF5500" stop-opacity="0.42" />
+      <stop offset="55%" stop-color="#FF5500" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#FF5500" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="stadiumGlowBlue" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.38" />
+      <stop offset="60%" stop-color="#1D4ED8" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="turfGrad" x1="640" y1="410" x2="640" y2="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F291E" />
+      <stop offset="100%" stop-color="#07120E" />
+    </linearGradient>
+    <linearGradient id="arcOrange" x1="180" y1="560" x2="980" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF5500" stop-opacity="0.15" />
+      <stop offset="55%" stop-color="#FF5500" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#FDBA74" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1280" height="720" fill="url(#bgSky)" />
+  <rect width="1280" height="720" fill="url(#stadiumGlowOrange)" />
+  <rect width="1280" height="720" fill="url(#stadiumGlowBlue)" />
+
+  <!-- Stadium Light Towers -->
+  <g opacity="0.7">
+    <line x1="210" y1="90" x2="210" y2="430" stroke="#334155" stroke-width="5" />
+    <rect x="175" y="70" width="70" height="24" rx="4" fill="#1E293B" stroke="#60A5FA" stroke-width="1.5" />
+    <circle cx="192" cy="82" r="5" fill="#93C5FD" />
+    <circle cx="210" cy="82" r="5" fill="#EFF6FF" />
+    <circle cx="228" cy="82" r="5" fill="#93C5FD" />
+
+    <line x1="1050" y1="80" x2="1050" y2="430" stroke="#334155" stroke-width="5" />
+    <rect x="1010" y="58" width="80" height="26" rx="4" fill="#1E293B" stroke="#FB923C" stroke-width="1.5" />
+    <circle cx="1028" cy="71" r="5" fill="#FDBA74" />
+    <circle cx="1050" cy="71" r="6" fill="#FFF7ED" />
+    <circle cx="1072" cy="71" r="5" fill="#FDBA74" />
+  </g>
+
+  <!-- Adelaide Foothills Silhouette -->
+  <path d="M0 430 Q180 390 360 412 T760 395 T1090 408 L1280 425 L1280 440 L0 440 Z" fill="#0B1320" opacity="0.9" />
+
+  <!-- Perspective Turf Pitch -->
+  <polygon points="0,430 1280,430 1280,720 0,720" fill="url(#turfGrad)" />
+
+  <!-- Perspective Turf Yardage & 50m Arc Markings -->
+  <g stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.5">
+    <line x1="640" y1="430" x2="640" y2="720" />
+    <line x1="420" y1="430" x2="110" y2="720" />
+    <line x1="860" y1="430" x2="1170" y2="720" />
+    <line x1="220" y1="430" x2="-240" y2="720" />
+    <line x1="1060" y1="430" x2="1520" y2="720" />
+    <line x1="0" y1="475" x2="1280" y2="475" />
+    <line x1="0" y1="535" x2="1280" y2="535" />
+    <line x1="0" y1="615" x2="1280" y2="615" />
+  </g>
+
+  <!-- AFL Goal Posts on Right Horizon -->
+  <g stroke="#F8FAFC" stroke-opacity="0.75" stroke-width="3">
+    <line x1="945" y1="310" x2="945" y2="455" />
+    <line x1="975" y1="265" x2="975" y2="460" />
+    <line x1="1005" y1="265" x2="1005" y2="460" />
+    <line x1="1035" y1="310" x2="1035" y2="455" />
+  </g>
+
+  <!-- 55m Drop-Punt Ballistic Trajectory Arc -->
+  <path d="M 290 565 Q 610 140 990 340" stroke="url(#arcOrange)" stroke-width="5" stroke-dasharray="10 6" fill="none" />
+  <path d="M 290 565 Q 610 140 990 340" stroke="#FF5500" stroke-width="2" fill="none" opacity="0.6" />
+
+  <!-- Key Biomechanical Nodes Along Trajectory -->
+  <circle cx="290" cy="565" r="9" fill="#FF5500" />
+  <circle cx="290" cy="565" r="18" stroke="#FF5500" stroke-opacity="0.45" stroke-width="2" />
+  <circle cx="635" cy="252" r="7" fill="#FDBA74" />
+  <circle cx="990" cy="340" r="9" fill="#38BDF8" />
+  <circle cx="990" cy="340" r="18" stroke="#38BDF8" stroke-opacity="0.5" stroke-width="2" />
+
+  <!-- Athlete Biomechanical Sprint/Kick Silhouette & Force Vectors -->
+  <g transform="translate(230, 365)">
+    <!-- Force Plate Ground Reaction Vector -->
+    <line x1="60" y1="200" x2="60" y2="60" stroke="#38BDF8" stroke-width="3" stroke-dasharray="4 4" />
+    <polygon points="54,65 60,48 66,65" fill="#38BDF8" />
+    <!-- Athlete Vector Frame -->
+    <circle cx="72" cy="44" r="16" fill="#F8FAFC" />
+    <path d="M68 64 L56 126 L24 188 M56 126 L118 148 L154 118 M64 78 L28 112 M64 78 L112 96" stroke="#F8FAFC" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Sherrin Oval Footy at Release Point -->
+    <ellipse cx="162" cy="108" rx="16" ry="10" transform="rotate(-32 162 108)" fill="#FF5500" stroke="#FFF7ED" stroke-width="2" />
+  </g>
+
+  <!-- Velocity & Force Curve Overlay Card (Bottom Left) -->
+  <g transform="translate(48, 540)">
+    <rect width="340" height="128" rx="8" fill="#0B0E14" fill-opacity="0.86" stroke="#1E293B" stroke-width="1.5" />
+    <text x="20" y="30" fill="#94A3B8" font-family="monospace" font-size="12" letter-spacing="1">HOLDEN HILL LAB · SPRINT &amp; BALLISTIC TELEMETRY</text>
+    <text x="20" y="64" fill="#F8FAFC" font-family="sans-serif" font-weight="700" font-size="24">61.4 km/h Ball Exit · 8.9 m/s Peak Sprint</text>
+    <text x="20" y="92" fill="#FF5500" font-family="monospace" font-size="13">GROUND CONTACT: 0.142s · PEAK FORCE: 3,420 N</text>
+  </g>
+</svg>
